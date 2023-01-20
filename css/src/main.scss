@@ -1,0 +1,26 @@
+
+
+// set colors
+$red: #6a0a1b;
+$grey: #e5e4e2;
+$grey-dark: darken( $grey, 40% );
+
+
+// breakpoints
+$bp-s: 600px;
+$bp-m: 768px;
+$bp-l: 1024px;
+$bp-xl: 1150px;
+
+
+// import all the things
+@import "mixins", "fonts", "reset", "button", "base", "grid", "form";
+
+
+// import layout components
+@import "header", "showcase", "content", "post-list", "footer";
+
+
+// import lightbox styles
+@import "magnific";
+

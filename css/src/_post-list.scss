@@ -1,0 +1,53 @@
+
+
+.post-list {
+    @include respond-to( $bp-s ) {
+        display: flex;
+        flex-wrap: wrap;
+        margin-right: -3%;
+    }
+
+    .entry {
+        position: relative;
+        margin-bottom: 3%;
+
+        &.sticky {
+            &:after {
+                @include font-bold;
+                content: 'Featured';
+                position: absolute;
+                top: 0;
+                left: 0;
+                padding: 8px 15px;
+                background: $red;
+                color: rgba( white, 1 );
+                font-size: .75em;
+                pointer-events: none;
+                opacity: .6;
+                transition: 400ms opacity ease-in-out;
+            }
+
+            &:hover:after {
+                opacity: 1;
+            }
+        }
+
+        img {
+            margin-bottom: 10px;
+            box-shadow: 0 0 15px rgba( black, .3 );
+        }
+
+        @include respond-to( $bp-s ) {
+            flex: 1;
+            flex-basis: 50%;
+            flex-grow: 0;
+            padding: 0 3% 3% 0;
+            margin-bottom: 0;
+        }
+
+        @include respond-to( $bp-l ) {
+            flex-basis: 33.3333%;
+        }
+    }
+}
+

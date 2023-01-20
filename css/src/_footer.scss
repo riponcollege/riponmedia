@@ -1,0 +1,28 @@
+
+
+footer {
+	@include clearfix;
+	@include padding;
+	background: $red;
+	color: white;
+	line-height: 1.5em;
+	padding-bottom: 40px !important;
+
+	h3 {
+		padding: 0;
+	}
+
+	p {
+		padding: 0 0 15px 0; 
+	}
+
+	a {
+		color: white;
+	}
+
+	.copyright {
+		font-size: .85em;
+		color: rgba( white, .5 );
+	}
+}
+
