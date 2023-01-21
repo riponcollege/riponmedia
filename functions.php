@@ -10,5 +10,5 @@ function require_multi( $files ) {
 
 
 // include utility functions
-require_multi( 'core', 'admin', 'metabox', 'images', 'paginate', 'showcase', 'button', 'calculator' );
+require_multi( 'core', 'admin', 'images', 'paginate', 'showcase', 'button', 'calculator' );
 
