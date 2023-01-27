@@ -94,6 +94,17 @@
 }
 
 
+.page-title {
+	font-size: 1em;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+
+	span {
+		opacity: .7;
+	}
+}
+
+
 .content-wide {
 	@include clearfix;
 	@extend .content-style;
@@ -117,6 +128,59 @@
 		.three-quarter {
 			width: 75%;
 			margin: 0;
+		}
+	}
+}
+
+
+.article {
+	max-width: 960px;
+	margin: 0 auto;
+
+	h1 {
+		text-shadow: 2px 2px 0 rgba( $grey, .5 );
+		letter-spacing: -1px;
+
+		@include respond-to( $bp-l ) {
+			margin: 30px 0;
+			letter-spacing: -2px;
+			font-size: 2.2em;
+		}
+	}
+
+	.article-content {
+		margin: 0 auto;
+
+		.wp-caption {
+			p {
+				font-size: .8em;
+			}
+
+			@include respond-to( $bp-m ) {
+				max-width: 50%;
+
+				&.alignright {
+					float: right;
+					margin: 20px 0 30px 30px;
+				}
+
+				&.alignleft {
+					float: left;
+					margin: 20px 30px 30px 0;
+				}
+			}
+
+			@include respond-to( $bp-xl ) {
+				max-width: 60%;
+
+				&.alignright {
+					margin: 20px -130px 30px 30px;
+				}
+
+				&.alignleft {
+					margin: 20px 30px 30px -130px;
+				}
+			}
 		}
 	}
 }

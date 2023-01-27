@@ -109,3 +109,5 @@ function p_is_image( $img_path ) {
     
 }
 
+
+add_filter( 'img_caption_shortcode_width', '__return_zero' );

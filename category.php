@@ -44,9 +44,7 @@ get_header(); ?>
 
 	<?php paginate(); ?>
 
-	</div><!-- #primary -->
-
-	<?php paginate(); ?>
+</div><!-- #primary -->
 
 <?php
 

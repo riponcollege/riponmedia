@@ -47,6 +47,7 @@ header {
 		.nav-menu {
 			display: none;
 			background: $red;
+			color: white;
 			position: relative;
 			z-index: 1000;
 			
@@ -76,7 +77,7 @@ header {
 					text-decoration: none;
 					text-transform: uppercase;
 					width: 100%;
-					transition: 400ms background-color ease-in-out, 400ms color ease-in-out;
+					transition: 400ms background-color ease-in-out;
 					background-color: transparent;
 					text-align: center;
 
@@ -94,6 +95,7 @@ header {
 				&:hover, &.open {
 					a {
 						background-color: lighten( $red, 5% );
+						color: white;
 					}
 
 					ul.sub-menu {

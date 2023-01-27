@@ -11,7 +11,9 @@ get_header();
 
 		<?php
 		if ( is_search() ) {
-			?><h1 class="post-title">Search Results for <span>'<?php print $_REQUEST["s"]; ?>'</span></h1><?php
+			?><h3 class="page-title">Search Results for <span>'<?php print $_REQUEST["s"]; ?>'</span></h3><?php
+		} else {
+			?><h3 class="page-title">Latest News from <span>the College Days Newspaper</span></h3><?php
 		}
 
 		?>

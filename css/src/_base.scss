@@ -26,9 +26,13 @@ p {
 }
 
 h1 {
-	font-size: 2.4em;
+	font-size: 1.6em;
 	line-height: 1.4em;
 	color: $red;
+	
+	@include respond-to( $bp-m ) {
+		font-size: 2em;
+	}
 
 	span {
 		opacity: .7;
@@ -36,7 +40,7 @@ h1 {
 }
 
 h2 {
-	font-size: 2.1em;
+	font-size: 1.8em;
 }
 
 h3 {
@@ -70,6 +74,8 @@ a {
 }
 
 img {
+	max-width: 100%;
+
 	&.alignleft {
 		float: left;
 		margin: 0 10px 10px 0;
