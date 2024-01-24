@@ -16,8 +16,8 @@ the_showcase();
 				?>
 				<h1><?php the_title(); ?></h1>
 				<div class="article-content">
+					<p class="post-date">By <?php print get_the_author_link() ?> in <?php print get_the_category_list( ', ' ) ?> on <?php the_date() ?></p>
 					<?php the_content(); ?>
-					<p class="quiet">Posted by <?php print get_the_author_link() ?> in <?php print get_the_category_list( ', ' ) ?>.</p>
 				</div>
 				<?php
 			endwhile;
