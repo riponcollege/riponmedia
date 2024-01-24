@@ -34,7 +34,7 @@
 <meta name="theme-color" content="#ffffff">
 
 <?php wp_head(); ?>
-<link href="<?php bloginfo( "template_url" ) ?>/css/main.css" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/main.css?v=1" rel="stylesheet" type="text/css">
 
 </head>
 <body <?php body_class(); ?>>
